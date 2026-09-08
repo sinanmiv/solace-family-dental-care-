@@ -7,7 +7,7 @@ export const FloatingWhatsApp: React.FC = () => {
   )}`;
 
   return (
-    <div className="fixed bottom-20 right-4 md:bottom-8 md:right-8 z-50 flex items-center group">
+    <div className="hidden md:flex fixed md:bottom-8 md:right-8 z-50 items-center group">
       {/* Tooltip Label */}
       <span className="hidden sm:inline-block mr-3 px-3 py-1.5 rounded-lg bg-[#263238] text-[#FFFFFF] text-xs font-sans font-medium shadow-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap">
         Chat with us on WhatsApp

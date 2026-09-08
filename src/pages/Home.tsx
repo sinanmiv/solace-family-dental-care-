@@ -18,21 +18,21 @@ export const Home: React.FC = () => {
       <SEO injectSchema={true} />
 
       {/* Section 1: Redesigned Hero with Numbered Label Overlay & Service Mega-List */}
-      <section className="pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden relative">
+      <section className="pt-20 pb-12 sm:pt-28 sm:pb-16 md:pt-36 md:pb-20 overflow-hidden relative">
         <div className="container-page">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
             
             {/* Left/Main Hero Image & Overlay */}
-            <div className="lg:col-span-8 relative rounded-solace overflow-hidden border border-[#E1E6E7] bg-[#F4F6F6] min-h-[420px] sm:min-h-[480px] shadow-md group">
+            <div className="lg:col-span-8 relative rounded-solace overflow-hidden border border-[#E1E6E7] bg-[#F4F6F6] min-h-[380px] sm:min-h-[480px] shadow-md group">
               <img
                 src={siteConfig.images.hero}
                 alt="Modern dental suite at Solace Family Dental Care"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#263238]/90 via-[#263238]/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#263238]/95 via-[#263238]/50 to-transparent sm:to-transparent" />
 
-              {/* Numbered Overlay Label Inspired by Reference (Top-Left) */}
-              <div className="absolute top-6 left-6 z-10">
+              {/* Numbered Overlay Label (Desktop: Absolute Top-Left | Mobile: Rendered inside text container to avoid headline overlap) */}
+              <div className="hidden sm:block absolute top-6 left-6 z-10">
                 <div className="inline-flex items-center gap-3 bg-[#FBFCFC]/90 backdrop-blur-md px-4 py-2 rounded border border-[#2FB8A6] shadow-sm">
                   <span className="font-mono font-bold text-lg text-[#2FB8A6]">01</span>
                   <span className="text-xs font-sans font-semibold uppercase tracking-wider text-[#263238]">
@@ -42,40 +42,23 @@ export const Home: React.FC = () => {
               </div>
 
               {/* Hero Main Copy Overlay (Bottom-Left) */}
-              <div className="absolute bottom-8 left-6 right-6 z-10 text-[#FFFFFF] space-y-4 max-w-xl">
-                <h1 className="font-serif font-medium text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight text-[#FFFFFF] drop-shadow-sm">
+              <div className="absolute bottom-6 left-4 right-4 sm:bottom-8 sm:left-6 sm:right-6 z-10 text-[#FFFFFF] space-y-3.5 sm:space-y-4 max-w-xl">
+                {/* Mobile-only 01 Eyebrow badge to prevent headline collision */}
+                <div className="sm:hidden inline-flex items-center gap-2 bg-[#FBFCFC]/90 backdrop-blur-md px-3 py-1.5 rounded border border-[#2FB8A6] shadow-xs mb-1">
+                  <span className="font-mono font-bold text-xs text-[#2FB8A6]">01</span>
+                  <span className="text-[10px] font-sans font-semibold uppercase tracking-wider text-[#263238]">
+                    Family dental care in Pattikkad
+                  </span>
+                </div>
+
+                <h1 className="font-serif font-medium text-2.5xl sm:text-4xl md:text-5xl tracking-tight leading-tight text-[#FFFFFF] drop-shadow-sm">
                   A calmer, more thoughtful way to care for your teeth.
                 </h1>
-                <p className="font-sans text-sm sm:text-base text-[#E1E6E7] leading-relaxed">
+                <p className="font-sans text-xs sm:text-base text-[#E1E6E7] leading-relaxed">
                   Unhurried consultations and clear explanations for families in Pattikkad and Perinthalmanna.
                 </p>
 
-                {/* Dr. Arshad Lead Doctor Clinical Hierarchy Block */}
-                <div className="flex items-center gap-3.5 p-2.5 bg-[#263238]/60 backdrop-blur-md rounded-lg border border-[#2FB8A6]/40 max-w-lg shadow-sm">
-                  <img
-                    src="/images/dr-arshad.jpg"
-                    alt="Dr. Arshad - Lead Dentist at Solace Family Dental Care"
-                    className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover object-center border-2 border-[#2FB8A6] flex-shrink-0 shadow-xs"
-                  />
-                  <div className="space-y-0.5">
-                    <div className="flex items-center gap-2">
-                      <p className="font-serif text-base sm:text-lg text-[#FFFFFF] font-medium tracking-tight">
-                        Dr. Arshad
-                      </p>
-                      <span className="text-[10px] font-sans font-semibold uppercase tracking-wider bg-[#2FB8A6]/30 text-[#2FB8A6] px-2 py-0.5 rounded border border-[#2FB8A6]/40">
-                        Lead Dentist
-                      </span>
-                    </div>
-                    <p className="text-xs font-sans text-[#E1E6E7]">
-                      BDS, Government Dental College, Thiruvananthapuram
-                    </p>
-                    <p className="text-[11px] font-mono text-[#2FB8A6] font-medium tracking-wide">
-                      Dental Registration No. 31208
-                    </p>
-                  </div>
-                </div>
-
-                <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3">
                   <Link
                     to="/appointment"
                     className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded bg-[#2FB8A6] text-[#FFFFFF] font-sans font-semibold text-sm hover:bg-[#1E8E7F] transition-colors shadow-sm"

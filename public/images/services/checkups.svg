@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+    <defs>
+      <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FBFCFC"/>
+        <stop offset="100%" stop-color="#F4F6F6"/>
+      </linearGradient>
+      <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+        <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#263238" stroke-width="1" stroke-opacity="0.05"/>
+      </pattern>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="800" height="450" fill="url(#bg)"/>
+    <rect width="800" height="450" fill="url(#grid)"/>
+
+    <!-- Decorative Soft Curves -->
+    <path d="M0 350 Q 200 300 400 380 T 800 340 L 800 450 L 0 450 Z" fill="#2FB8A6" opacity="0.08"/>
+    
+    <!-- Central Symbol -->
+    <g transform="translate(0, 0)">
+      <circle cx="400" cy="180" r="60" fill="none" stroke="#2FB8A6" stroke-width="8"/>
+        <path d="M370 180 L390 200 L435 155" stroke="#2FB8A6" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+
+    <!-- Header Tag -->
+    <rect x="50" y="45" width="160" height="28" rx="4" fill="#0F3D3E"/>
+    <text x="130" y="63" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#F7FAF9" text-anchor="middle" letter-spacing="1.5">PREVENTIVE</text>
+
+    <!-- Procedure Title -->
+    <text x="50" y="380" font-family="Fraunces, Georgia, serif" font-size="32" font-weight="500" fill="#263238">Preventive Care</text>
+    <text x="50" y="410" font-family="Inter, sans-serif" font-size="14" font-weight="400" fill="#6B7780">General Checkups & Consultations</text>
+
+    <!-- Solace Brand Mark -->
+    <text x="750" y="65" font-family="Fraunces, Georgia, serif" font-size="20" font-weight="500" fill="#0F3D3E" text-anchor="end">SOLACE</text>
+  </svg>

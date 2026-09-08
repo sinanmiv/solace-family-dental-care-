@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #FBFCFC;
+  --color-surface: #F4F6F6;
+  --color-surface-slate: #7C8B99;
+  --color-text: #263238;
+  --color-text-muted: #6B7780;
+  --color-border: #E1E6E7;
+  --color-primary: #2FB8A6;
+  --color-primary-dark: #1E8E7F;
+  --color-cta-bg: #2FB8A6;
+  --color-cta-text: #FFFFFF;
+  --color-error: #C0483D;
+  --color-success: #2FB8A6;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  body {
+    background-color: var(--color-bg) !important;
+    color: var(--color-text) !important;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  /* Keyboard Focus Ring Accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+}
+
+/* Fallback Global Utility Aliases */
+.bg-solace-bg { background-color: var(--color-bg) !important; }
+.bg-solace-surface { background-color: var(--color-surface) !important; }
+.bg-solace-slate { background-color: var(--color-surface-slate) !important; color: #FFFFFF !important; }
+.text-solace-text { color: var(--color-text) !important; }
+.text-solace-muted { color: var(--color-text-muted) !important; }
+.border-solace-border { border-color: var(--color-border) !important; }
+.text-solace-primary { color: var(--color-primary) !important; }
+.bg-solace-primary { background-color: var(--color-primary) !important; }
+.bg-solace-cta { background-color: var(--color-cta-bg) !important; color: var(--color-cta-text) !important; }
+
+/* Custom Scroll reveal & Motion transitions */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Responsive Container helpers */
+.container-page {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-page {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+.container-content {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-reading {
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}

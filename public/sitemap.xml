@@ -61,6 +61,11 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://solacedental.in/care/full-mouth-rehabilitation</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://solacedental.in/about</loc>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>

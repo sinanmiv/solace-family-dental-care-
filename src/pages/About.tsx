@@ -31,10 +31,10 @@ export const About: React.FC = () => {
             <div className="lg:col-span-7 space-y-6 font-sans text-base text-[#263238] leading-relaxed">
               <h2 className="font-serif text-3xl text-[#263238]">Why Solace exists</h2>
               <p>
-                Dental care is often associated with rush, noise, and uncertainty. At Solace Family Dental Care in Pattikkad, we set out to create a practice that reverses that experience—combining clinical responsibility with an environment designed to make you feel calm and respected.
+                Established in 2013, Solace Family Dental Care has been serving the Pattikkad community in Malappuram for over a decade. We set out to create a dental practice that reverses the traditional rush and noise—combining clinical responsibility with an environment designed to make you feel calm, respected, and understood.
               </p>
               <p>
-                Led by Dr. Arshad, our clinic serves individuals and families across Pattikkad and the surrounding Perinthalmanna area. We believe that true quality care begins long before any instrument is picked up: it starts by listening to your story and understanding your expectations.
+                Led by Dr. Arshad (5+ years of clinical experience), our practice provides comprehensive dental care for individuals and families across Pattikkad, Perinthalmanna, and the surrounding Malappuram district in Kerala. We believe that true quality care begins by listening to your concerns and explaining every option clearly.
               </p>
             </div>
 

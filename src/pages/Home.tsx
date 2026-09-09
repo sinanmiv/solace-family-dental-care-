@@ -139,6 +139,8 @@ export const Home: React.FC = () => {
 
           <div className="flex items-center gap-4 text-[#6B7780]">
             <span className="text-[#2FB8A6] font-bold">&bull;</span>
+            <span className="font-semibold text-[#263238]">Established 2013</span>
+            <span className="text-[#2FB8A6] font-bold">&bull;</span>
             <span>Serving Pattikkad &amp; Perinthalmanna</span>
             <span className="text-[#2FB8A6] font-bold">&bull;</span>
             <span>Unrushed Consultations</span>

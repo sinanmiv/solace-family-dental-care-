@@ -62,14 +62,14 @@ export const DoctorProfile: React.FC<DoctorProfileProps> = ({ doctor }) => {
               Credentials &amp; Clinical Verification
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="space-y-1">
                 <span className="text-xs font-medium text-[#6B7780] flex items-center gap-1.5">
                   <Award className="w-3.5 h-3.5 text-[#2FB8A6]" />
-                  <span>Academic Qualifications:</span>
+                  <span>Qualifications:</span>
                 </span>
                 {doctor.isQualificationsVerified && doctor.qualifications ? (
-                  <span className="text-sm font-semibold text-[#263238]">{doctor.qualifications}</span>
+                  <span className="text-xs font-semibold text-[#263238] block">{doctor.qualifications}</span>
                 ) : (
                   <VerifyPlaceholder label="Doctor Qualifications" compact />
                 )}
@@ -78,13 +78,21 @@ export const DoctorProfile: React.FC<DoctorProfileProps> = ({ doctor }) => {
               <div className="space-y-1">
                 <span className="text-xs font-medium text-[#6B7780] flex items-center gap-1.5">
                   <FileText className="w-3.5 h-3.5 text-[#2FB8A6]" />
-                  <span>State Council Registration:</span>
+                  <span>State Registration:</span>
                 </span>
                 {doctor.isRegistrationVerified && doctor.registrationNumber ? (
-                  <span className="text-sm font-semibold text-[#263238]">{doctor.registrationNumber}</span>
+                  <span className="text-xs font-semibold text-[#263238] block">{doctor.registrationNumber}</span>
                 ) : (
                   <VerifyPlaceholder label="Registration Number" compact />
                 )}
+              </div>
+
+              <div className="space-y-1">
+                <span className="text-xs font-medium text-[#6B7780] flex items-center gap-1.5">
+                  <Clock className="w-3.5 h-3.5 text-[#2FB8A6]" />
+                  <span>Clinical Experience:</span>
+                </span>
+                <span className="text-xs font-semibold text-[#263238] block">5+ years of clinical experience</span>
               </div>
             </div>
           </div>

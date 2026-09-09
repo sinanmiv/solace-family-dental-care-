@@ -52,6 +52,7 @@ export interface SiteConfig {
   clinicName: string;
   tagline: string;
   positioningStatement: string;
+  establishedYear: number;
   address: string;
   cityArea: string;
   pincode: string;
@@ -98,7 +99,8 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   clinicName: "Solace Family Dental Care",
   tagline: "A calmer way to care for your family's smile.",
-  positioningStatement: "A calmer, more thoughtful way to care for your family's teeth.",
+  positioningStatement: "Established in 2013, Solace Family Dental Care has been serving the Pattikkad community for over a decade with a calmer, more thoughtful approach to family dentistry.",
+  establishedYear: 2013,
   address: "Pallikuth, Chungam, Pattikkad, Kerala 679325, India",
   cityArea: "Pattikkad, Malappuram",
   pincode: "679325",
@@ -146,19 +148,19 @@ export const siteConfig: SiteConfig = {
       imageUrl: "/images/dr-arshad.jpg",
       qualifications: "BDS, Government Dental College, Thiruvananthapuram",
       registrationNumber: "Dental Registration No. 31208",
-      yearsExperience: null,
+      yearsExperience: 5,
       areasOfPractice: [
         "General & Preventive Dentistry",
-        "Restorative Care",
+        "Restorative Care & Full Mouth Rehabilitation",
         "Endodontics (Root Canal Treatment)",
         "Clear Aligners & Orthodontic Guidance",
         "Dental Prosthetics & Implants Assessment"
       ],
       philosophy: "Solace was built on a simple idea: a visit to the dentist doesn't have to feel like something to get through. It can feel like something to feel better from.",
-      biography: "Dr. Arshad leads Solace Family Dental Care with a dedication to thoughtful, patient-focused dental care. He emphasizes open communication, unhurried consultations, and gentle treatment for every member of the family.",
+      biography: "Dr. Arshad brings 5+ years of clinical experience to Solace Family Dental Care in Pattikkad, emphasizing open communication, unhurried consultations, and gentle, patient-focused dental treatment.",
       isQualificationsVerified: true,
       isRegistrationVerified: true,
-      isExperienceVerified: false,
+      isExperienceVerified: true,
     }
   ],
   specialists: [
@@ -409,6 +411,30 @@ export const siteConfig: SiteConfig = {
       typicalDuration: "Varies according to individual treatment plan",
       considerations: "Framed around what's realistic and healthy for your teeth, not just aesthetic preference alone.",
       yourConsultation: "Your dentist will listen to your concerns and outline realistic, step-by-step care options."
+    },
+    // 11. Full Mouth Rehabilitation
+    {
+      id: "full-mouth-rehabilitation",
+      slug: "full-mouth-rehabilitation",
+      name: "Full Mouth Rehabilitation",
+      shortDesc: "Comprehensive, multi-disciplinary restorative plans to rebuild oral health, function, and smile aesthetics.",
+      tagline: "COMPREHENSIVE RESTORATIVE EXCELLENCE",
+      isConfirmed: true,
+      icon: "ShieldCheck",
+      imageUrl: "/images/services/restorative.jpg",
+      summary: "Full mouth rehabilitation combines tailored restorative treatments to rebuild damaged or worn teeth, restoring comfortable chewing function and smile aesthetics.",
+      whatIsIt: "Full mouth rehabilitation is a comprehensive treatment approach designed to restore the health, function, and appearance of your entire mouth when multiple teeth are compromised, missing, or worn down.",
+      whoIsItFor: "Patients with widespread tooth wear, multiple missing teeth, complex bite issues, or extensive decay requiring a coordinated restorative plan.",
+      whatItInvolves: [
+        "Comprehensive clinical assessment and digital bite alignment mapping",
+        "Personalized multi-phase treatment planning tailored to your schedule",
+        "Coordinated restorative procedures (crowns, bridges, implants, or fillings)",
+        "Careful bite adjustments for long-term comfort and joint stability"
+      ],
+      whatToExpect: "A phased, comfortable care sequence clearly explained at every step before treatment begins.",
+      typicalDuration: "Completed in planned phases over several appointments",
+      considerations: "Every treatment step is customized around your comfort, preserving healthy tooth structure wherever possible.",
+      yourConsultation: "Your dentist will conduct a thorough examination, explain all restorative options clearly, and answer any questions."
     }
   ],
   reviews: [],
@@ -424,6 +450,7 @@ export function getDentistSchemaJSONLD(config: SiteConfig = siteConfig) {
     "@id": "https://solacedental.in/#clinic",
     "url": "https://solacedental.in",
     "telephone": config.phone,
+    "foundingDate": "2013",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Pallikuth, Chungam",
@@ -465,6 +492,7 @@ export function getDentistSchemaJSONLD(config: SiteConfig = siteConfig) {
         "name": "Dr. Arshad",
         "jobTitle": "Lead Dentist",
         "alumniOf": "Government Dental College, Thiruvananthapuram",
+        "description": "5+ years of clinical experience",
         "hasCredential": {
           "@type": "EducationalOccupationalCredential",
           "credentialCategory": "degree",

@@ -122,7 +122,7 @@ export const DoctorProfile: React.FC<DoctorProfileProps> = ({ doctor }) => {
             </div>
 
             <h3 className="font-serif text-2xl text-[#FFFFFF] font-medium leading-tight">
-              Schedule your visit with Dr. Arshad
+              Schedule your visit with Dr. Muhammed Arshad NS
             </h3>
 
             <p className="text-xs text-[#E1E6E7] leading-relaxed">

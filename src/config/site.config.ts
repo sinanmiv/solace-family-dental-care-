@@ -143,7 +143,7 @@ export const siteConfig: SiteConfig = {
   doctors: [
     {
       id: "dr-arshad",
-      name: "Dr. Arshad",
+      name: "Dr. Muhammed Arshad NS",
       title: "Lead Dentist",
       imageUrl: "/images/dr-arshad.jpg",
       qualifications: "BDS, Government Dental College, Thiruvananthapuram",
@@ -157,7 +157,7 @@ export const siteConfig: SiteConfig = {
         "Dental Prosthetics & Implants Assessment"
       ],
       philosophy: "Solace was built on a simple idea: a visit to the dentist doesn't have to feel like something to get through. It can feel like something to feel better from.",
-      biography: "Dr. Arshad brings 5+ years of clinical experience to Solace Family Dental Care in Pattikkad, emphasizing open communication, unhurried consultations, and gentle, patient-focused dental treatment.",
+      biography: "Dr. Muhammed Arshad NS brings 5+ years of clinical experience to Solace Family Dental Care in Pattikkad, emphasizing open communication, unhurried consultations, and gentle, patient-focused dental treatment.",
       isQualificationsVerified: true,
       isRegistrationVerified: true,
       isExperienceVerified: true,
@@ -476,7 +476,7 @@ export function getDentistSchemaJSONLD(config: SiteConfig = siteConfig) {
     "medicalSpecialty": "Dentistry",
     "founder": {
       "@type": "Person",
-      "name": "Dr. Arshad",
+      "name": "Dr. Muhammed Arshad NS",
       "jobTitle": "Lead Dentist",
       "alumniOf": "Government Dental College, Thiruvananthapuram",
       "hasCredential": {
@@ -489,7 +489,7 @@ export function getDentistSchemaJSONLD(config: SiteConfig = siteConfig) {
     "employee": [
       {
         "@type": "Person",
-        "name": "Dr. Arshad",
+        "name": "Dr. Muhammed Arshad NS",
         "jobTitle": "Lead Dentist",
         "alumniOf": "Government Dental College, Thiruvananthapuram",
         "description": "5+ years of clinical experience",

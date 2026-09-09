@@ -107,7 +107,7 @@ export const Footer: React.FC = () => {
                 <Link to="/about" className="hover:text-[#2FB8A6] transition-colors">About Solace</Link>
               </li>
               <li>
-                <Link to="/doctors" className="hover:text-[#2FB8A6] transition-colors">Meet Dr. Arshad</Link>
+                <Link to="/doctors" className="hover:text-[#2FB8A6] transition-colors">Meet Dr. Muhammed Arshad NS</Link>
               </li>
               <li>
                 <Link to="/clinic" className="hover:text-[#2FB8A6] transition-colors">Inside Our Clinic</Link>

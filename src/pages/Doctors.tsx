@@ -10,8 +10,8 @@ export const Doctors: React.FC = () => {
   return (
     <>
       <SEO
-        title="Dr. Arshad & Specialist Team – Solace Family Dental Care"
-        description="Meet Dr. Arshad and the visiting specialist dental team at Solace Family Dental Care in Pattikkad."
+        title="Dr. Muhammed Arshad NS & Specialist Team – Solace Family Dental Care"
+        description="Meet Dr. Muhammed Arshad NS and the visiting specialist dental team at Solace Family Dental Care in Pattikkad."
         path="/doctors"
       />
 
@@ -26,7 +26,7 @@ export const Doctors: React.FC = () => {
               The people behind your care.
             </h1>
             <p className="font-sans text-base sm:text-lg text-[#6B7780] leading-relaxed">
-              Meet Dr. Arshad and the visiting specialist team at Solace Family Dental Care in Pattikkad.
+              Meet Dr. Muhammed Arshad NS and the visiting specialist team at Solace Family Dental Care in Pattikkad.
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export const Doctors: React.FC = () => {
           {/* CTA Band */}
           <div className="bg-[#2FB8A6] text-[#FFFFFF] p-10 md:p-14 rounded-solace text-center space-y-6">
             <h2 className="font-serif text-3xl text-[#FFFFFF]">
-              Schedule a consultation with Dr. Arshad
+              Schedule a consultation with Dr. Muhammed Arshad NS
             </h2>
             <p className="text-sm text-[#FBFCFC] max-w-lg mx-auto">
               Discuss your oral health concerns directly in an unhurried consultation.

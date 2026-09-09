@@ -166,7 +166,7 @@ export const AppointmentForm: React.FC = () => {
               Want instant appointment confirmation?
             </p>
             <p className="text-xs text-[#6B7780]">
-              Chat directly with Dr. Arshad &amp; team on WhatsApp
+              Chat directly with Dr. Muhammed Arshad NS &amp; team on WhatsApp
             </p>
           </div>
         </div>

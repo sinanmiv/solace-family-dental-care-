@@ -34,7 +34,7 @@ export const About: React.FC = () => {
                 Established in 2013, Solace Family Dental Care has been serving the Pattikkad community in Malappuram for over a decade. We set out to create a dental practice that reverses the traditional rush and noise—combining clinical responsibility with an environment designed to make you feel calm, respected, and understood.
               </p>
               <p>
-                Led by Dr. Arshad (5+ years of clinical experience), our practice provides comprehensive dental care for individuals and families across Pattikkad, Perinthalmanna, and the surrounding Malappuram district in Kerala. We believe that true quality care begins by listening to your concerns and explaining every option clearly.
+                Led by Dr. Muhammed Arshad NS (5+ years of clinical experience), our practice provides comprehensive dental care for individuals and families across Pattikkad, Perinthalmanna, and the surrounding Malappuram district in Kerala. We believe that true quality care begins by listening to your concerns and explaining every option clearly.
               </p>
             </div>
 
@@ -91,14 +91,14 @@ export const About: React.FC = () => {
           <div className="container-reading space-y-4 font-sans">
             <h2 className="font-serif text-3xl text-[#263238]">Meet the Team</h2>
             <p className="text-base text-[#6B7780] leading-relaxed">
-              Dr. Arshad leads a dedicated team focused on maintaining high standards of clinical safety, patient comfort, and continuous oral health education.
+              Dr. Muhammed Arshad NS leads a dedicated team focused on maintaining high standards of clinical safety, patient comfort, and continuous oral health education.
             </p>
             <div className="pt-2">
               <Link
                 to="/doctors"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-[#2FB8A6] hover:underline"
               >
-                <span>Read Dr. Arshad&apos;s full doctor profile &rarr;</span>
+                <span>Read Dr. Muhammed Arshad NS&apos;s full doctor profile &rarr;</span>
               </Link>
             </div>
           </div>
